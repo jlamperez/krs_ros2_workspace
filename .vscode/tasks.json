@@ -46,7 +46,7 @@
             "label": "purge",
             "detail": "Purge workspace by deleting all generated files.",
             "type": "shell",
-            "command": "rm -fr build install log; py3clean .",
+            "command": "rm -fr build* install* log; py3clean .",
             "problemMatcher": []
         },
         // Linting and static code analysis tasks
@@ -266,7 +266,7 @@
             "label": "import from workspace file",
             "detail": "Use vcs to import modules specified by a workspace/rosinstall file.",
             "type": "shell",
-            "command": "vcs import < src/ros2.repos src",
+            "command": "vcs import --recursive < src/ros2.repos src",
             "problemMatcher": []
         },
         {
