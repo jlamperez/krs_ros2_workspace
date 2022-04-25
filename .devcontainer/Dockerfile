@@ -44,6 +44,7 @@ RUN apt-get update \
    pv \
    libgazebo11-dev \
    libidn11 \
+   unzip \
    #
    # Clean up
    && apt-get autoremove -y \
